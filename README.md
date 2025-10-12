@@ -31,4 +31,4 @@ ros2 launch h1_fullbody_controller h1_fullbody_controller.launch.py
 #Open another terminal and run nav2 bringups
 source /opt/ros/humble/setup.bash
 source install/setup.bash
-ros2 launch myslam humanoid.launch.py
+ros2 launch my_slam humanoid.launch.py

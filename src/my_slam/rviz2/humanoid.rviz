@@ -8,8 +8,15 @@ Panels:
         - /TF1
         - /TF1/Frames1
         - /TF1/Tree1
+        - /Global Planner1
+        - /Global Planner1/Path1
+        - /Global Planner1/VoxelGrid1
+        - /Global Planner1/Polygon1
         - /Controller1
         - /Controller1/Local Plan1
+        - /Controller1/Trajectories1
+        - /Controller1/Polygon1
+        - /Controller1/VoxelGrid1
         - /MarkerArray1
         - /MarkerArray1/Namespaces1
         - /PointCloud21
@@ -82,108 +89,13 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: false
-        base_link:
-          Value: true
-        d435_left_imager_link:
-          Value: true
-        d435_rgb_module_link:
-          Value: true
-        imu_link:
-          Value: true
-        left_ankle_link:
-          Value: true
-        left_elbow_link:
-          Value: true
-        left_hip_pitch_link:
-          Value: true
-        left_hip_roll_link:
-          Value: true
-        left_hip_yaw_link:
-          Value: true
-        left_knee_link:
-          Value: true
-        left_shoulder_pitch_link:
-          Value: true
-        left_shoulder_roll_link:
-          Value: true
-        left_shoulder_yaw_link:
-          Value: true
-        lidar:
-          Value: true
-        logo_link:
-          Value: true
-        map:
-          Value: true
-        mid360_link:
-          Value: true
-        odom:
-          Value: true
-        right_ankle_link:
-          Value: true
-        right_elbow_link:
-          Value: true
-        right_hip_pitch_link:
-          Value: true
-        right_hip_roll_link:
-          Value: true
-        right_hip_yaw_link:
-          Value: true
-        right_knee_link:
-          Value: true
-        right_shoulder_pitch_link:
-          Value: true
-        right_shoulder_roll_link:
-          Value: true
-        right_shoulder_yaw_link:
-          Value: true
-        torso_link:
-          Value: true
-        world:
-          Value: true
       Marker Scale: 1
       Name: TF
       Show Arrows: true
       Show Axes: true
       Show Names: false
       Tree:
-        map:
-          odom:
-            base_link:
-              left_hip_yaw_link:
-                left_hip_roll_link:
-                  left_hip_pitch_link:
-                    left_knee_link:
-                      left_ankle_link:
-                        {}
-              right_hip_yaw_link:
-                right_hip_roll_link:
-                  right_hip_pitch_link:
-                    right_knee_link:
-                      right_ankle_link:
-                        {}
-              torso_link:
-                d435_left_imager_link:
-                  {}
-                d435_rgb_module_link:
-                  {}
-                imu_link:
-                  {}
-                left_shoulder_pitch_link:
-                  left_shoulder_roll_link:
-                    left_shoulder_yaw_link:
-                      left_elbow_link:
-                        {}
-                lidar:
-                  {}
-                logo_link:
-                  {}
-                mid360_link:
-                  {}
-                right_shoulder_pitch_link:
-                  right_shoulder_roll_link:
-                    right_shoulder_yaw_link:
-                      right_elbow_link:
-                        {}
+        {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -582,7 +494,7 @@ Visualization Manager:
       Enabled: false
       Name: Realsense
     - Class: rviz_default_plugins/MarkerArray
-      Enabled: true
+      Enabled: false
       Name: MarkerArray
       Namespaces:
         {}
@@ -592,7 +504,7 @@ Visualization Manager:
         History Policy: Keep Last
         Reliability Policy: Reliable
         Value: /trajectories
-      Value: true
+      Value: false
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
@@ -679,16 +591,16 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 26.64687728881836
+      Distance: 22.127470016479492
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 6.996001720428467
-        Y: 15.091635704040527
-        Z: -0.5425005555152893
+        X: -0.13156935572624207
+        Y: 1.4496517181396484
+        Z: 1.4919884204864502
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false

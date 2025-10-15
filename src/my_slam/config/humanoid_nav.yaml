@@ -172,7 +172,7 @@ controller_server:
       transform_tolerance: 0.1
       temperature: 1.0
       gamma: 0.015
-      motion_model: "Ackermann"
+      motion_model: "DiffDrive"
       visualize: true
       regenerate_noises: false
       TrajectoryVisualizer:
@@ -182,8 +182,6 @@ controller_server:
         plugin: "mppi::DefaultOptimalTrajectoryValidator"
         collision_lookahead_time: 2.0
         consider_footprint: false
-      AckermannConstraints:
-        min_turning_r: 1.5
       critics: ["ConstraintCritic", "CostCritic", "GoalCritic", "GoalAngleCritic", "PathAlignCritic", "PathFollowCritic", "PathAngleCritic", "PreferForwardCritic"]
       ConstraintCritic:
         enabled: true
@@ -268,7 +266,7 @@ global_costmap:
       global_frame: map
       robot_base_frame: base_link
       use_sim_time: True
-      robot_radius: 0.6 # radius set and used, so no footprint points
+      robot_radius: 0.3 # radius set and used, so no footprint points
       resolution: 0.05
       # footprint: "[ [0.6, 0.6], [0.6, -0.6], [-0.6, -0.6], [-0.6, 0.6] ]"
       plugins: ["static_layer", "inflation_layer"]
@@ -316,7 +314,7 @@ local_costmap:
       width: 10
       height: 10
       resolution: 0.05
-      robot_radius: 0.8
+      robot_radius: 0.35
       # footprint: "[ [0.45, 0.45], [0.45, -0.45], [-0.45, -0.45], [-0.45, 0.45] ]"
       # plugins: ["voxel_layer", "obstacle_layer", "inflation_layer"]
       plugins: ["voxel_layer", "inflation_layer"]

@@ -2,7 +2,7 @@ isaacsim.replicator.agent:
   version: 0.7.0
   character:
     asset_path: https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.0/Isaac/People/Characters/
-    command_file: /home/aimo/usd/command.txt
+    command_file: command.txt
     filters: []
     navigation_area: []
     num: 2
@@ -17,7 +17,7 @@ isaacsim.replicator.agent:
       object_info_bounding_box_2d_loose: false
       object_info_bounding_box_3d: false
       agent_info_skeleton_data: false
-      output_dir: /home/aimo/ReplicatorResult
+      output_dir: ~/ReplicatorResult
       semantic_filter_predicate: class:character|robot;id:*
       image_output_format: png
       rgb: true
@@ -40,14 +40,14 @@ isaacsim.replicator.agent:
   response:
     response_list: []
   robot:
-    command_file: /home/aimo/usd/robot_command.txt
+    command_file: robot_command.txt
     iw_hub_num: 0
     navigation_area: []
     nova_carter_num: 0
     spawn_area: []
     write_data: false
   scene:
-    asset_path: /home/aimo/usd/h1_ros.usd
+    asset_path: h1_ros.usd
   sensor:
     camera_num: 0
   event:
